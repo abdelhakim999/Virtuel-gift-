@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Gift for You</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .card {
+            background: #ffdde1;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1 {
+            color: #ff6b81;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .heart {
+            font-size: 100px;
+            color: #ff6b81;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>To My Love</h1>
+        <p>You make my heart skip a beat!</p>
+        <div class="heart">❤️</div>
+        <p>Can't wait to create more memories with you.</p>
+    </div>
+
+    <script>
+        // You can add custom JavaScript here to make the page more interactive
+    </script>
+</body>
+</html>
